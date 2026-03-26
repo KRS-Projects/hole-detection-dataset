@@ -52,9 +52,9 @@ python -m part_extraction "path/to/downloaded/dataset" "path/to/extract/files/to
 ```
 
 ## Labels
-
-In the labels folder csv-files for the respective parts can be found.
-The labels "1" correspond to the hole faces. Shown below is an example of how the labels can be used.
+The `labels.zip` file contains CSV files for each part, with filenames matching the corresponding STEP files (only the extension differs).  
+Each CSV uses binary labels, where `1` indicates a hole face and `0` indicates a non-hole face.  
+Below is an example of how to use these labels with the extracted parts.
 
 ```python
 import cadquery as cq
